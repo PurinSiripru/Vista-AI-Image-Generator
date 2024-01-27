@@ -4,22 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vista AI Image Generator</title>
+  <link rel="icon" href="images/Logo.png">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="Logo.png">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" viewBox="0 0 900 600"  version="1.1"><rect width="100vw" height="100vw" fill="#001829"/><g><g transform="translate(876 183)"><path d="M0 -147L127.3 -73.5L127.3 73.5L0 147L-127.3 73.5L-127.3 -73.5Z" fill="#297EA6"/></g><g transform="translate(101 104)"><path d="M0 -130L112.6 -65L112.6 65L0 130L-112.6 65L-112.6 -65Z" fill="#297EA6"/></g><g transform="translate(504 589)"><path d="M0 -144L124.7 -72L124.7 72L0 144L-124.7 72L-124.7 -72Z" fill="#297EA6"/></g></g></svg>
-
-<header>
-  <h1>Vista AI Image Generator</h1>
-</header>
-<section class="images-section"></section>
-<section class="bottom-section">
-  <div class="input-container">
-    <input/>
-    <div id="submit-icon">➢</div>
-  </div>
-</section>
-<script src="app.js"></script>
+  <section class="image-generator">
+    <div class ="content">
+      <h1>Vista AI Image Generator Tool Javascript </h1>
+      <p>Convert your text into an image by using AI Image    Generator tool.</p>
+      <form action= "#" class="generate-form">
+        <input type="text" class="prompt-input" placeholder="Type what you want to see" required>
+        <div class="controls">
+          <select class="img-quantity">
+            <option value="1" selected>1 Image</option>
+            <option value="2">2 Image</option>
+            <option value="3">3 Image</option>
+            <option value="4">4 Image</option>
+          </select>
+          <button type="submit" class="generate-btn">Generate</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="image-gallery">
+    <div class ="img-card">
+      <img src = "images/img1.jpg" alt="image">
+    </div>
+    <div class ="img-card">
+      <img src = "images/img2.jpg" alt="image">
+    </div>
+    <div class ="img-card">
+      <img src = "images/img3.jpg" alt="image">
+    </div>
+    <div class ="img-card">
+      <img src = "images/img4.jpg" alt="image">
+    </div>
+  </section>
 </body>
 </html>
